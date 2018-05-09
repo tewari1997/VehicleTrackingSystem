@@ -1,0 +1,59 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:animateLayoutChanges="true"
+    android:layout_height="match_parent"
+    >
+<fragment
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.kiet.www.blackbox.Activity.MapsActivity" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        map:fabSize="normal"
+        android:layout_gravity="bottom|end"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/ic_menu_sort_by_size" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bus Details"
+        android:layout_below="@+id/fab"
+        android:textSize="17sp"
+        android:textColor="@color/primary_dark"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="10dp"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        map:fabSize="normal"
+        android:clickable="true"
+        map:srcCompat="@android:drawable/ic_menu_recent_history"
+        android:layout_above="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginEnd="20dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Previous Details"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
+
