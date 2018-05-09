@@ -79,9 +79,7 @@ public class LoginActivity extends AppCompatActivity {
 
                     //Log.e("Bus Id",b.getBus_id());
                 }
-
             }
-
             @Override
             public void onCancelled(DatabaseError databaseError) {
 
